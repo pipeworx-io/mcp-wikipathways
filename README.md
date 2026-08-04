@@ -2,12 +2,15 @@
 
 WikiPathways MCP — open community pathway database.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 812+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `search_pathways` | Search WikiPathways (open community pathway database) for biological pathways by name. Pathways map genes/proteins/metabolites in processes like glycolysis, apoptosis, or signaling. Optionally restrict to one organism by Latin or common name. Keyless. Complements KEGG/Reactome. |
+| `list_pathways` | List all WikiPathways pathways for a single organism. Give a Latin or common name, e.g. "Homo sapiens", "human", or "mouse". Returns each pathway's id, name, link, and last revision. Keyless. |
+| `get_pathway` | Get metadata and a viewer link for one WikiPathways pathway by its WikiPathways id (e.g. "WP554"). Returns name, species, revision, and a human-viewable diagram URL. Keyless. |
 
 ## Quick Start
 
@@ -23,7 +26,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 812+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +50,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
