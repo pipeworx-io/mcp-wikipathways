@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-wikipathways",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "WikiPathways MCP — open community pathway database.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-eafb61c2226dc7aef584608169a0e9107bbe27e9979e9049656ac73d63ccf84e",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-c4974b94aa16a83ed5650a538f290252ccfbd10ef5b248a3026574bb32f86c7e",
+    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
   }
 }
