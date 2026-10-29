@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-wikipathways",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "WikiPathways MCP — open community pathway database.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-wikipathways": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "wikipathways"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-wikipathways.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/wikipathways",
   "pipeworx": {
-    "sourceHash": "v1-c4974b94aa16a83ed5650a538f290252ccfbd10ef5b248a3026574bb32f86c7e",
-    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
+    "mode": "gateway",
+    "slug": "wikipathways",
+    "gatewaySlug": "wikipathways",
+    "sourceHash": "v1-8289a30d4dcc70b3142a39a1c00d3965a268ddbcc069155fb19f94fe49f7960a",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
